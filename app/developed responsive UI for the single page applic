@@ -1,0 +1,34 @@
+developed responsive UI for the single page application. (bootstrap)
+
+designed and implemented class hierarchy using command pattern for tab menu system. (abstract command to object)
+
+designed and implemented map system using template pattern, easy to switch between different map libraries.
+
+(many leaflet plugins,  custom tooltip(show tips at eight directions)
+
+//custom measurement tool, measures and records distance between points on map. 
+
+custom plugin for rendering complex point/ line/ polygon on map.
+
+simulate advanced event that the leaflet doesn't support natively
+
+designed and implemented UI component 'infinite scrolling' that presents more than 10000 users using limited resource.
+
+Implemented communication protocol between Frontend and backend, interprets complex map data from backend.
+
+ Integrates webworker into system for heavy computation tasks, configures advanced separate compilation for webworker and application using webpack.
+
+ 1. TypeScript is a superset of JavaScript
+
+ Static typing detect the development errors before code execution. forces developers to specify types clearly.
+
+ TypeScript is suitable for large application due to security capability.
+ It has interfaces. support  optional parameter, multi types, generics
+
+ chaotic
+
+
+
+ SGML prescribes the rules for creating a specific markup language such as HTML. HTML is a single set of tags, while SGML provides the capability for creating a desired set of tags.
+
+ XML is similar to SGML in that it provides the capability for creating any desired set of tags.
