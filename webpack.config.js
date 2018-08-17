@@ -42,13 +42,14 @@ module.exports = {
     rules: [{
       test: /\.jsx?$/,
       include: APP_PATH,
+      exclude: /node_modules/,
       use: ['babel-loader'],
     },
-    {
-      test: /\.jsx?$/,
-      include: APP_PATH,
-      use: ['eslint-loader'],
-    },
+    // {
+    //   test: /\.jsx?$/,
+    //   include: APP_PATH,
+    //   use: ['eslint-loader'],
+    // },
     {
       test: /\.css$/,
       exclude: /node_modules/,
@@ -59,6 +60,8 @@ module.exports = {
   plugins: [
     new HtmlwebpackPlugin({
       title: 'React-App',
+      template: 'index.html', // Load a custom template
+      inject: 'body', // Inject all scripts into the body
     }),
   ],
 

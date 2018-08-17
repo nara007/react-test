@@ -1,7 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import axios from 'axios';
-import List from './components/List/List';
+import EFM from './components/eventsfeed/events-feed-message';
+import EventsFeedBody from './components/eventsfeed/events-feed-body';
+// import Panel from './components/mycomponent/panel';
+// import Map from './components/map/map';
+// import Table from '@material-ui/core/Table';
+// import { SERVICESTATUS } from './components/service/service-item';
+// import Service from './components/service/service';
+// import { FadeLoader } from 'react-spinners';
+// import Picker from './components/picker/picker';
+// import axios from 'axios';
+// import List from './components/List/List';
+import './app.css';
+import { div } from 'gl-matrix/src/gl-matrix/vec2';
 
 // function App() {
 //   const items = [];
@@ -24,57 +35,15 @@ import List from './components/List/List';
 //   );
 // }
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      items: [{
-        id: 1,
-        name: 'xiaoming',
-        age: 32,
-        title: 'Mr',
-      }, {
-        id: 2,
-        name: 'dahong',
-        age: 33,
-        title: 'Ms',
-      }],
-    };
-    this.loadItemFromServer = this.loadItemFromServer.bind(this);
-    this.deleteItem = this.deleteItem.bind(this);
-  }
-
-  deleteItem(id) {
-    this.setState(prevState => (
-      { items: prevState.items.filter(item => item.id !== id) }
-    ));
-  }
-
-  // componentDidMount() {
-
-  // }
-
-  loadItemFromServer() {
-    console.log('hallo');
-    axios.get('/api/user')
-      .then((response) => {
-        console.log(response.data);
-        this.setState({ items: response.data });
-      }).catch(() => {
-        console.log('error');
-      });
-  }
-
-  render() {
-    console.log('render ........');
-    console.log(this.state.items);
-    return (
-      <div className="container">
-        <List items={this.state.items} delete={this.deleteItem} />
-        <button className="test" onClick={this.loadItemFromServer}>load</button>
-      </div>
-    );
-  }
+function App() {
+  return (
+    // <Picker />
+    // <Map />
+    <div>
+      <EFM message="hello this is a new message" />
+      <EventsFeedBody />
+    </div>
+  );
 }
 
 
