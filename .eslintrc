@@ -9,6 +9,7 @@
 
     "rules": {
         "no-console": "off",
+        "react/jsx-no-duplicate-props": [{ "ignoreCase": true}]
     },
     "env": {
         "mocha": true

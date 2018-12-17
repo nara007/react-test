@@ -63,7 +63,7 @@ const EventsFeedBody = (props) => {
         </div>
         <div style={{ display: 'flex' }}>
           <Typography
-            style={{ marginRight: 5 }}
+            style={{ width: 55 }}
             variant="subheading"
             classes={{ subheading: classes.vesselProperty }}
           >
@@ -99,7 +99,7 @@ const EventsFeedBody = (props) => {
         </div>
         <div style={{ display: 'flex' }}>
           <Typography
-            style={{ marginRight: 5 }}
+            style={{ width: 58 }}
             variant="subheading"
             classes={{ subheading: classes.vesselProperty }}
           >

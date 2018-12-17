@@ -2,8 +2,12 @@ const styles = () => ({
   container: {
     display: 'flex',
     alignItems: 'flex-start',
-    paddingLeft: 10,
-    paddingRight: 10,
+    // paddingLeft: 20,
+    // paddingRight: 20,
+    // paddingTop: 20,
+    // paddingBottom: 20,
+    // backgroundColor: 'lightgray',
+    width: '100%',
   },
   header: {
     display: 'flex',
@@ -34,14 +38,15 @@ const styles = () => ({
     display: 'grid',
     gridTemplateColumns: 'repeat(4, 1fr)',
     gridTemplateRows: 50,
-
-    columnGap: '30px',
+    flexGrow: 1,
+    columnGap: '0',
     rowGap: '20px',
+    minWidth: 650,
   },
   footer: {
     display: 'flex',
-    flexGrow: 1,
     justifyContent: 'flex-end',
+    minWidth: 100,
   },
   vesselProperty: {
     color: '#A2A2A2',
